@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Piedra, Papel y Tijera</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="./imatges/1x/tijera.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Juego de Piedra, Papel y Tijera</h1>
+    <p>Elige tu opción:</p>
+    <section>
+      <h2>Nombre de usuario:</h2>
+
+      <form>
+        <input type="text" id="username" placeholder="Ingrese su nombre" />
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+      <h2>Clasificación:</h2>
+      <ul id="leaderboard"></ul>
+    </section>
+    <div>
+      <img src="imatges\1x\piedra.png" alt="Piedra" id="piedra" />
+      <img src="imatges\1x\papel.png" alt="Papel" id="papel" />
+      <img src="imatges\1x\tijera.png" alt="Tijera" id="tijera" />
+    </div>
+    <div id="result">
+      <p></p>
+      <p>Tu: <span id="playerScore">0</span></p>
+      <p>IA: <span id="computerScore">0</span></p>
+      <p>Record de victorias seguidas: <span id="record">0</span></p>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

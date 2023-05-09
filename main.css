@@ -1,0 +1,92 @@
+body {
+  background-color: #252525;
+  color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: medium;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+img {
+  margin: 0px 20px 0px 20px;
+  border-radius: 20px;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+#game {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#battle {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-choice,
+#computer-choice {
+  margin: 0 20px;
+}
+
+.option {
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.option:hover {
+  transform: scale(1.1);
+}
+
+#result {
+  margin: 20px 0;
+}
+
+.win {
+  color: #00ff00;
+}
+
+.loss {
+  color: #ff0000;
+}
+
+.tie {
+  color: #f1c40f;
+}
+
+.record-label {
+  color: red;
+  margin-right: 10px;
+}
+
+#barra {
+  margin: 0px 15px 0px 15px;
+}
+
+#nombre {
+  font-weight: bold;
+}
+
+#records {
+  display: flex;
+  justify-content: center;
+}
