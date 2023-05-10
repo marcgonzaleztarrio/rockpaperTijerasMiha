@@ -135,10 +135,10 @@ img:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
-  gap: 0px 30px;
   grid-auto-flow: row;
   justify-items: center;
   align-items: center;
+  gap: 3px;
 }
 
 .clasificacion {
