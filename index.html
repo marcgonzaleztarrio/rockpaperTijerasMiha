@@ -11,29 +11,54 @@
     />
   </head>
   <body>
-    <h1>Juego de Piedra, Papel y Tijera</h1>
-    <p>Elige tu opción:</p>
-    <section>
-      <h2>Nombre de usuario:</h2>
+    <h1 id="titulo">Juego de Piedra, Papel y Tijera</h1>
+    <div class="gridContainer  escondertodo">
+      <div class="clasificacion">
+        <section class="leaderboard">
+          <h2>Clasificación:</h2>
+          <div id="records-container"></div>
+        </section>
+      </section>
+      </div>
 
-      <form>
-        <input type="text" id="username" placeholder="Ingrese su nombre" />
-        <button type="submit" id="submit">Enviar</button>
-      </form>
-      <h2>Clasificación:</h2>
-      <ul id="leaderboard"></ul>
-    </section>
-    <div>
-      <img src="imatges\1x\piedra.png" alt="Piedra" id="piedra" />
-      <img src="imatges\1x\papel.png" alt="Papel" id="papel" />
-      <img src="imatges\1x\tijera.png" alt="Tijera" id="tijera" />
+      <div class="opciones">
+        <section class="imagenesPlay">
+          <form id="newForm">
+            <input type="text" id="username2" placeholder="Ingrese su nuevo nombre" />
+            <button type="submit" id="newSubmit">Enviar</button>
+          </form>
+          <h2>Nombre de usuario: <span id="nombreActual"></span></h2>
+          <h3>Elige tu opcion:</h3>
+          <div>
+            <img src="imatges\1x\piedra.png" alt="Piedra" id="piedra" />
+            <img src="imatges\1x\papel.png" alt="Papel" id="papel" />
+            <img src="imatges\1x\tijera.png" alt="Tijera" id="tijera" />
+          </div>
+        </section>
+      </div>
+      <div class="resultadoss">
+        <section class="resultados">
+          <h2>Resultados</h2>
+          <div id="result">
+            <p>Último resultado: </p>
+            <p>Tu: <span id="playerScore">0</span></p>
+            <p>IA: <span id="computerScore">0</span></p>
+            <p>WinStreak actual: <span id="actual">0</span></p>
+            <p>Victorias seguidas: <span id="record">0</span></p>
+          </div>
+        </section>
+        </section>
+      </div>
     </div>
-    <div id="result">
-      <p></p>
-      <p>Tu: <span id="playerScore">0</span></p>
-      <p>IA: <span id="computerScore">0</span></p>
-      <p>Record de victorias seguidas: <span id="record">0</span></p>
+    <div class="containerNames" class="hidden">
+      <section id="inputNombre">
+        <form>
+          <input type="text" id="username" placeholder="Ingrese su nombre" />
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+      </section>
     </div>
+
     <script src="java.js"></script>
   </body>
 </html>
