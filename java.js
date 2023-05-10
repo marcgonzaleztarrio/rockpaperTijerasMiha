@@ -67,7 +67,7 @@ function updateScore(result) {
   playerScoreText.textContent = playerScore;
   computerScoreText.textContent = computerScore;
   resultText.textContent = `Último resultado: ${result}`;
-  actualScore.textContent = `→ ${winStreak} ←`;
+  actualScore.textContent = `🏆 ${winStreak} 🏆`;
 
   updateUsuarios();
 }
