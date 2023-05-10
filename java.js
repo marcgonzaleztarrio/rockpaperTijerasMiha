@@ -49,7 +49,7 @@ function updateScore(result) {
     console.log(winStreak);
     if (winStreak > record) {
       record = winStreak;
-      winStreakText.textContent = `usuario: ${personName} ⭐ ${record} ⭐`;
+      winStreakText.textContent = ` ${personName} ⭐ ${record} ⭐`;
     }
   } else if (result === "Perdiste") {
     console.log(usuarios);

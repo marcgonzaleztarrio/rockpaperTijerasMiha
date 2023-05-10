@@ -11,11 +11,12 @@
     />
   </head>
   <body>
+    <main></main>
     <h1 id="titulo">Juego de Piedra, Papel y Tijera</h1>
     <div class="gridContainer  escondertodo">
       <div class="clasificacion">
         <section class="leaderboard">
-          <h2>Clasificación:</h2>
+          <h2 class="underline">Clasificación</h2>
           <div id="records-container"></div>
         </section>
       </section>
@@ -28,7 +29,7 @@
             <button type="submit" id="newSubmit">Enviar</button>
           </form>
           <h2>Nombre de usuario: <span id="nombreActual"></span></h2>
-          <h3>Elige tu opcion:</h3>
+          <h3>Elige tu opción:</h3>
           <div>
             <img src="imatges\1x\piedra.png" alt="Piedra" id="piedra" />
             <img src="imatges\1x\papel.png" alt="Papel" id="papel" />
@@ -38,11 +39,18 @@
       </div>
       <div class="resultadoss">
         <section class="resultados">
-          <h2>Resultados</h2>
+          <h2 class="underline">Resultados</h2>
+          <table id="result" class="tablaResultados">
+            <tr>
+              <td class="arriba derecha"><p>Tu</p></td>
+              <td class="arriba"><p>IA</td>
+            </tr>
+            <tr>
+              <td class="derecha"><p id="playerScore" >0</p></td>
+              <td ><p id="computerScore">0</p></td>
+            </tr>
+          </table>
           <div id="result">
-            <p>Último resultado: </p>
-            <p>Tu: <span id="playerScore">0</span></p>
-            <p>IA: <span id="computerScore">0</span></p>
             <p>WinStreak actual: <span id="actual">0</span></p>
             <p>Victorias seguidas: <span id="record">0</span></p>
           </div>
@@ -58,7 +66,7 @@
         </form>
       </section>
     </div>
-
     <script src="java.js"></script>
+
   </body>
 </html>

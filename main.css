@@ -1,11 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+* {
+  font-family: "Schoolbell", cursive;
+}
+
+html {
+  background-image: url(./imatges/wall3.avif);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  background-image: url(./imatges/fondo.avif);
+  opacity: 0.5;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -30;
+  position: absolute;
+}
 
 body {
-  background-color: #252525dd;
-  color: #f1f1f1;
-  font-family: "Indie Flower", cursive;
-  text-align: center;
+  z-index: 100;
   font-size: medium;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-family: "Walter Turncoat", cursive;
+  display: block;
+  width: 90%;
+  height: 90%;
+  min-height: auto;
+  margin: 20px auto 20px auto;
+  background-color: #002519;
+  overflow-y: auto;
+  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: #b78240 solid 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 h1,
@@ -15,8 +57,19 @@ h2 {
   font-size: 2rem;
 }
 
+#titulo {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: 2px 1px #fd7585;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 #nombre {
-  color: #a1508f;
+  color: #fd7585;
 }
 
 img {
@@ -97,10 +150,25 @@ img:hover {
   grid-area: 1 / 2 / 2 / 3;
 }
 
+.tablaResultados {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.arriba {
+  border-bottom: 3px solid #50c7ec;
+}
+
+.derecha {
+  border-right: 3px solid #fd7585;
+}
+
 .resultadoss {
   margin-top: 80px;
   justify-self: center;
   align-self: center;
+  text-align: center;
   grid-area: 1 / 3 / 2 / 4;
 }
 
@@ -113,13 +181,16 @@ img:hover {
 }
 
 #nombreActual {
-  color: #a1508f;
+  color: #fd7585;
 }
 
 #newForm {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#newForm input[type="text"] {
+  width: 300px;
 }
 
 #newForm input[type="text"],
@@ -128,18 +199,18 @@ img:hover {
   margin: 8px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #newForm button[type="submit"] {
-  background-color: #a1508f;
-  color: #fff;
+  background-color: #50c7ec;
+  color: #080808;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 #newForm button[type="submit"]:hover {
-  background-color: #70249b7b;
+  background-color: #266e84;
 }
 
 .leaderboard,
@@ -157,7 +228,7 @@ img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 65vh;
 }
 
 #inputNombre {
@@ -176,7 +247,7 @@ img:hover {
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #inputNombre input[type="text"] {
@@ -185,12 +256,12 @@ img:hover {
 }
 
 #inputNombre button[type="submit"] {
-  background-color: #a1508f;
-  color: #fff;
+  background-color: #50c7ec;
+  color: #080808;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 #inputNombre button[type="submit"]:hover {
-  background-color: #656060;
+  background-color: #266e84;
 }
